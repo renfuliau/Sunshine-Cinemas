@@ -53,17 +53,17 @@
   opacity: 0.8;
 }
 
+.news_sc hr {
+  margin-bottom: 2px;
+  border-top: 1px solid white;
+}
+
 .news_all {
   padding: 5px 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.news_all hr {
-  margin-top: 0;
-  border-top: 2px solid rgba(0, 0, 0, 0.911);
 }
 
 .news_all ul {
@@ -76,7 +76,6 @@
 }
 
 .news_all ul li a {
-  color: #212529;
   text-decoration: none;
 }
 
@@ -125,7 +124,7 @@
 
 .now_on_sc .container .row .rank_list ul li {
   background-color: darkslategray;
-  padding: 0px 40px;
+  padding: 0px 20px;
 }
 
 .now_on_sc .container .row .rank_list ul li h5 {
@@ -143,6 +142,40 @@
 .now_on_sc .container .row .rank_list ul li .modal-dialog {
   max-width: 800px;
   margin: 1.75rem auto;
+}
+
+.coming_soon_sc {
+  width: 100%;
+  background-color: #0c0a0a;
+}
+
+.coming_soon_sc h2 {
+  padding: 70px 0 20px 0;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.time_line_card {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dot_line .time_line_dot {
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.dot_line .time_line_line {
+  width: 100%;
+  height: 2px;
+  padding-top: 6px;
+  border-bottom: 4px dashed white;
 }
 
 .swiper-container {
