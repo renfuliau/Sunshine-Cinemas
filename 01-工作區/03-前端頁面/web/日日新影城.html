@@ -9,7 +9,8 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
-    <link rel="stylesheet" href="/style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
 
 </head>
 
@@ -22,14 +23,14 @@
             <div class="container d-flex justify-content-between">
 
                 <div class="logo text-light">
-                    <h1>日日新影城</h1>
+                    <h1><a href="#news" class="text-white">日日新影城</a></h1>
                 </div>
 
                 <div class="nav_links">
                     <ul class="d-flex text-white">
-                        <li><a>最新消息</a></li>
-                        <li><a>現正熱映</a></li>
-                        <li><a>即將上映</a></li>
+                        <li><a href="#news" class="text-white">最新消息</a></li>
+                        <li><a href="#now_on" class="text-white">現正熱映</a></li>
+                        <li><a href="#coming_soon" class="text-white">即將上映</a></li>
                         <li><a>電影時刻</a></li>
                         <li><a>票價說明</a></li>
                         <li><a>關於日新</a></li>
@@ -41,18 +42,18 @@
         </nav>
 
         <!-- BANNER -->
-        <div class="banner position-relative">
+        <div class="banner position-relative" id="news">
 
-            <img class="banner_light position-absolute" src="/img/banner-光.jpg" alt="">
+            <img class="banner_light position-absolute" src="../img/banner-光.jpg" alt="">
 
             <div class="news_sc position-absolute">
 
                 <div class="d-flex news_all">
-                    <h4 class="news_title">最新消息</h4>
-                    <hr>
+                    <h4 class="news_title" id="news">最新消息</h4>
+
                     <ul>
                         <li>
-                            <a href="" class="d-flex text text-white">
+                            <a href="" class="d-flex text-white">
                                 <div class="news_date">2019-12-12</div>
                                 <div class="news_content">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
                             </a>
@@ -94,10 +95,10 @@
         <!-- 現正熱映 -->
         <div class="now_on_sc">
             <div class="container">
-                <h2 class="text-light">現正熱映</h2>
+                <h2 class="text-light" id="now_on">現正熱映</h2>
                 <div class="row">
                     <div class="rank_list col-4 d-flex">
-                        <div class="list_name">
+                        <div class="list_name bg-danger">
                             <h3>票房排行榜</h3>
                         </div>
                         <ul>
@@ -196,7 +197,7 @@
                                             </div>
                                             <div class="modal-body d-flex row">
                                                 <img class="col-4"
-                                                    src="http://www.srm.com.tw/movie/1220/IP%20MAN%204.jpg" alt="">
+                                                    src="http://www.srm.com.tw/movie/1213/The%20Good%20Liar.jpg" alt="">
                                                 <p class="col-8">類　　型：劇情<br>導　　演：比爾坎登(Bill Condon) <br>
 
                                                     演　　員：海倫米蘭(Helen Mirren) 、 伊恩麥克連(Ian McKellen)<br>
@@ -258,7 +259,8 @@
                             <li class="d-flex justify-content-between">
                                 <h5>葉問4</h5>
                                 <button type="button" class="btn btn-secondary btn-sm intro_btn" data-toggle="modal"
-                                    data-target="#myModal">電影介紹</button>
+                                    data-target="#myModal">電影介紹
+                                </button>
 
                                 <div class="modal fade" id="myModal" role="dialog">
                                     <div class="modal-dialog">
@@ -514,8 +516,14 @@
                                         src="https://www.youtube.com/embed/YrtreI7lkys" frameborder="0"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe></div>
-                                <div class="swiper-slide"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/qNf93yPY2LQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                                <div class="swiper-slide"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/XSyGZa-_3fg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                <div class="swiper-slide"><iframe width="100%" height="100%"
+                                        src="https://www.youtube.com/embed/qNf93yPY2LQ" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe></div>
+                                <div class="swiper-slide"><iframe width="100%" height="100%"
+                                        src="https://www.youtube.com/embed/XSyGZa-_3fg" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe></div>
                                 ...
                             </div>
 
@@ -531,46 +539,190 @@
 
         <div class="coming_soon_sc">
             <div class="container">
-                <h2 class="text-light">即將上映</h2>
+                <h2 class="text-light" id="coming_soon">即將上映</h2>
                 <div class="time_line">
                     <div class="swiper-container time_line_swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="card bg-primary text-white" style="width: 100%;">
-                                    <div class="card-body d-flex justify-content-start  time_line_card" style="width: 100%;">
-                                        <div class="dot_line d-flex" style="width: 100%;">
-                                            <div class="time_line_dot"></div>
-                                            <div class="time_line_line"></div>
+                                <button type="button" class="btn btn-secondary coming_soon_btn" data-toggle="modal"
+                                    data-target="#cats">
+                                    <div class="card bg-danger text-white" style="width: 100%;">
+                                        <div class="card-body d-flex justify-content-start  time_line_card"
+                                            style="width: 100%;">
+                                            <div class="dot_line d-flex" style="width: 100%;">
+                                                <div class="time_line_dot"></div>
+                                                <div class="time_line_line"></div>
+                                            </div>
+                                            <p class="card-title">2019-12-24</p>
+                                            <p class="card-text">CATS貓</p>
                                         </div>
-                                        <h5 class="card-title">2019-12-27</h5>
-                                        <p class="card-text">霹靂嬌娃</p>
-                                        </div>
-                                    <img src="http://www.srm.com.tw/movie/1227/Charlie%27s%20Angels.BIG.jpg"
-                                        height="200px" class="card-img-top" alt="...">
-                                </div>
+                                        <img src="http://www.srm.com.tw/movie/1224/Cats.jpg" height="200px"
+                                            class="card-img-top" alt="...">
+                                    </div>
+                                </button>
                             </div>
                             <div class="swiper-slide">
-                                    <div class="card bg-primary text-white" style="width: 100%;">
-                                            <div class="card-body d-flex justify-content-start  time_line_card" style="width: 100%;">
-                                                <div class="dot_line d-flex" style="width: 100%;">
-                                                    <div class="time_line_dot"></div>
-                                                    <div class="time_line_line"></div>
-                                                </div>
-                                                <h5 class="card-title">2019-12-27</h5>
-                                                <p class="card-text">霹靂嬌娃</p>
-                                                </div>
-                                            <img src="http://www.srm.com.tw/movie/1227/Charlie%27s%20Angels.BIG.jpg"
-                                                height="200px" class="card-img-top" alt="...">
+                                <button type="button" class="btn btn-secondary coming_soon_btn" data-toggle="modal"
+                                    data-target="#CharliesAngels">
+                                    <div class="card bg-danger text-white" style="width: 100%;">
+                                        <div class="card-body d-flex justify-content-start  time_line_card"
+                                            style="width: 100%;">
+                                            <div class="dot_line d-flex" style="width: 100%;">
+                                                <div class="time_line_dot"></div>
+                                                <div class="time_line_line"></div>
+                                            </div>
+                                            <p class="card-title">2019-12-27</p>
+                                            <p class="card-text">霹靂嬌娃</p>
                                         </div>
+                                        <img src="http://www.srm.com.tw/movie/1227/Charlie%27s%20Angels.BIG.jpg"
+                                            height="200px" class="card-img-top" alt="...">
+                                    </div>
+                                </button>
                             </div>
-                            <div class="swiper-slide">Slide 3</div>
-                            <div class="swiper-slide">Slide 4</div>
-                            <div class="swiper-slide">Slide 5</div>
-                            <div class="swiper-slide">Slide 6</div>
-                            <div class="swiper-slide">Slide 7</div>
-                            <div class="swiper-slide">Slide 8</div>
-                            <div class="swiper-slide">Slide 9</div>
-                            <div class="swiper-slide">Slide 10</div>
+                            <div class="swiper-slide">
+                                <button type="button" class="btn btn-secondary coming_soon_btn" data-toggle="modal"
+                                    data-target="#CharliesAngels">
+                                    <div class="card bg-danger text-white" style="width: 100%;">
+                                        <div class="card-body d-flex justify-content-start  time_line_card"
+                                            style="width: 100%;">
+                                            <div class="dot_line d-flex" style="width: 100%;">
+                                                <div class="time_line_dot"></div>
+                                                <div class="time_line_line"></div>
+                                            </div>
+                                            <p class="card-title">2019-12-27</p>
+                                            <p class="card-text">倒數計死</p>
+                                        </div>
+                                        <img src="http://www.srm.com.tw/movie/1227/Countdown.jpg" height="200px"
+                                            class="card-img-top" alt="...">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button type="button" class="btn btn-secondary coming_soon_btn" data-toggle="modal"
+                                    data-target="#CharliesAngels">
+                                    <div class="card bg-danger text-white" style="width: 100%;">
+                                        <div class="card-body d-flex justify-content-start  time_line_card"
+                                            style="width: 100%;">
+                                            <div class="dot_line d-flex" style="width: 100%;">
+                                                <div class="time_line_dot"></div>
+                                                <div class="time_line_line"></div>
+                                            </div>
+                                            <p class="card-title">2019-12-24</p>
+                                            <p class="card-text">CATS貓</p>
+                                        </div>
+                                        <img src="http://www.srm.com.tw/movie/1224/Cats.jpg" height="200px"
+                                            class="card-img-top" alt="...">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button type="button" class="btn btn-secondary coming_soon_btn" data-toggle="modal"
+                                    data-target="#CharliesAngels">
+                                    <div class="card bg-danger text-white" style="width: 100%;">
+                                        <div class="card-body d-flex justify-content-start  time_line_card"
+                                            style="width: 100%;">
+                                            <div class="dot_line d-flex" style="width: 100%;">
+                                                <div class="time_line_dot"></div>
+                                                <div class="time_line_line"></div>
+                                            </div>
+                                            <p class="card-title">2019-12-24</p>
+                                            <p class="card-text">CATS貓</p>
+                                        </div>
+                                        <img src="http://www.srm.com.tw/movie/1224/Cats.jpg" height="200px"
+                                            class="card-img-top" alt="...">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button type="button" class="btn btn-secondary coming_soon_btn" data-toggle="modal"
+                                    data-target="#CharliesAngels">
+                                    <div class="card bg-danger text-white" style="width: 100%;">
+                                        <div class="card-body d-flex justify-content-start  time_line_card"
+                                            style="width: 100%;">
+                                            <div class="dot_line d-flex" style="width: 100%;">
+                                                <div class="time_line_dot"></div>
+                                                <div class="time_line_line"></div>
+                                            </div>
+                                            <p class="card-title">2019-12-24</p>
+                                            <p class="card-text">CATS貓</p>
+                                        </div>
+                                        <img src="http://www.srm.com.tw/movie/1224/Cats.jpg" height="200px"
+                                            class="card-img-top" alt="...">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button type="button" class="btn btn-secondary coming_soon_btn" data-toggle="modal"
+                                    data-target="#CharliesAngels">
+                                    <div class="card bg-danger text-white" style="width: 100%;">
+                                        <div class="card-body d-flex justify-content-start  time_line_card"
+                                            style="width: 100%;">
+                                            <div class="dot_line d-flex" style="width: 100%;">
+                                                <div class="time_line_dot"></div>
+                                                <div class="time_line_line"></div>
+                                            </div>
+                                            <p class="card-title">2019-12-24</p>
+                                            <p class="card-text">CATS貓</p>
+                                        </div>
+                                        <img src="http://www.srm.com.tw/movie/1224/Cats.jpg" height="200px"
+                                            class="card-img-top" alt="...">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button type="button" class="btn btn-secondary coming_soon_btn" data-toggle="modal"
+                                    data-target="#CharliesAngels">
+                                    <div class="card bg-danger text-white" style="width: 100%;">
+                                        <div class="card-body d-flex justify-content-start  time_line_card"
+                                            style="width: 100%;">
+                                            <div class="dot_line d-flex" style="width: 100%;">
+                                                <div class="time_line_dot"></div>
+                                                <div class="time_line_line"></div>
+                                            </div>
+                                            <p class="card-title">2019-12-24</p>
+                                            <p class="card-text">CATS貓</p>
+                                        </div>
+                                        <img src="http://www.srm.com.tw/movie/1224/Cats.jpg" height="200px"
+                                            class="card-img-top" alt="...">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button type="button" class="btn btn-secondary coming_soon_btn" data-toggle="modal"
+                                    data-target="#CharliesAngels">
+                                    <div class="card bg-danger text-white" style="width: 100%;">
+                                        <div class="card-body d-flex justify-content-start  time_line_card"
+                                            style="width: 100%;">
+                                            <div class="dot_line d-flex" style="width: 100%;">
+                                                <div class="time_line_dot"></div>
+                                                <div class="time_line_line"></div>
+                                            </div>
+                                            <p class="card-title">2019-12-24</p>
+                                            <p class="card-text">CATS貓</p>
+                                        </div>
+                                        <img src="http://www.srm.com.tw/movie/1224/Cats.jpg" height="200px"
+                                            class="card-img-top" alt="...">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button type="button" class="btn btn-secondary coming_soon_btn" data-toggle="modal"
+                                    data-target="#CharliesAngels">
+                                    <div class="card bg-danger text-white" style="width: 100%;">
+                                        <div class="card-body d-flex justify-content-start  time_line_card"
+                                            style="width: 100%;">
+                                            <div class="dot_line d-flex" style="width: 100%;">
+                                                <div class="time_line_dot"></div>
+                                                <div class="time_line_line"></div>
+                                            </div>
+                                            <p class="card-title">2019-12-24</p>
+                                            <p class="card-text">CATS貓</p>
+                                        </div>
+                                        <img src="http://www.srm.com.tw/movie/1224/Cats.jpg" height="200px"
+                                            class="card-img-top" alt="...">
+                                    </div>
+                                </button>
+                            </div>
                         </div>
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
@@ -585,6 +737,70 @@
 
 
     <footer></footer>
+
+    <!-- 即將上映Model -->
+    <!-- Cats -->
+    <div class="modal fade" id="cats" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">CATS貓</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body d-flex row">
+                    <img class="col-4" src="http://www.srm.com.tw/movie/1224/Cats.jpg" alt="">
+                    <p class="col-8">類　　型：音樂/歌舞
+                        <br>
+                        導　　演：湯姆霍伯(Tom Hooper)
+                        <br>
+                        演　　員：詹姆斯柯登(James Corden) 、 茱蒂丹契(Judi Dench) 、 伊卓瑞斯艾巴(Idris Elba) 、
+                        泰勒絲(Taylor Swift) 、 瑞貝爾威爾森(Rebel Wilson) 、 伊恩麥克連(Ian McKellen) 、
+                        雷溫斯頓(Ray Winstone)
+                        <br>
+                        發行公司：環球影業
+                        <br>
+                        <br>
+                        金獎導演湯姆霍伯（《王者之聲：宣戰時刻》、《悲慘世界》、《丹麥女孩》）將安德魯洛伊韋伯打破各項銷售紀錄的音樂劇拍成一部萬眾期待的電影。
+
+                        《CATS貓》一片豪華的演員陣容包括詹姆斯柯登、朱蒂丹契、A咖傑森、伊卓瑞斯艾巴、珍妮佛哈德森、伊恩麥克連、泰勒絲、瑞貝爾威爾森，並且特別介紹英國皇家芭蕾舞團首席女伶法蘭契絲卡海沃德首次演出電影處女作。
+
+                        這部音樂片有安德魯洛伊韋伯編寫的經典音樂和世界級的舞者陣容，由曾經榮獲百老匯東尼獎的編舞師安迪布蘭肯布勒（《漢密爾頓》、《高地人生》）負責編舞，這部電影以令人歎為觀止的場景設計、最先進的拍攝技術，以及從芭蕾舞到現代舞、嘻哈舞到爵士舞、街舞到踢踏舞的多樣化舞蹈風格，為全新世代重新想像這齣經典音樂劇。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CharliesAngels -->
+    <div class="modal fade" id="CharliesAngels" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">霹靂嬌娃</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body d-flex row">
+                    <img class="col-4" src="http://www.srm.com.tw/movie/1227/Charlie%27s%20Angels.BIG.jpg" alt="">
+                    <p class="col-8">類　　型：動作、冒險
+                        <br>
+                        導　　演：伊莉莎白班克斯(Elizabeth Banks)
+                        <br>
+                        演　　員：克莉絲汀史都華(Kristen Stewart) 、 娜歐蜜史考特(Naomi Scott) 、 喬納森塔克(Jonathan Tucker) 、 派屈克史都華(Patrick
+                        Stewart) 、 山姆克萊弗林(Sam Claflin) 、 吉蒙翰蘇(Djimon Hounsou) 、 伊莉莎白班克斯(Elizabeth Banks) 、 艾拉巴林斯卡(Ella
+                        Balinska)
+                        <br>
+                        發行公司：索尼影業
+                        <br>
+                        <br>
+                        由天才女導伊莉莎白班克斯所帶領的全新霹靂嬌娃，包含克莉絲汀史都華、娜歐蜜史考特及艾拉巴林斯卡，替傳說中神龍見首不見尾的「查理」工作。這些天使們一直以來，都為高端私人客戶提供最隱密的頂級安全檢查和調查工作。而現在，這個神秘的「湯森組織」早已發展成一個勢力銳不可檔的跨國集團—在擁有全球最聰明、勇敢，且訓練最系統最堅強的性感女力之下，這些遍佈全球的「波斯利」依然帶著絕美嬌娃們穿梭於世界各個角落。而當一位年輕的系統工程師吹響這個看似普通卻藏有機關的危險哨子時，這些各具獨特魅力且能文善武的的性感嬌娃們便會即刻採取行動。為了保護我們所有的人，她們願意將自己的生命推上最前線。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 </body>
 
