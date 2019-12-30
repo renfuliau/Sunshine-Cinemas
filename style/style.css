@@ -2,6 +2,10 @@ body {
   font-family: 'Noto Sans TC', sans-serif;
 }
 
+h2 {
+  padding: 70px 0 20px 0;
+}
+
 .nav_bar {
   height: 75px;
   width: 100%;
@@ -226,6 +230,67 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
+}
+
+.show_time_sc {
+  background-color: black;
+}
+
+.show_time_sc .dropdown {
+  padding: 70px 0 20px 50px;
+}
+
+.showtime_box {
+  position: relative;
+}
+
+.scroll_showtime {
+  position: relative;
+  height: 580px;
+  overflow: auto;
+}
+
+.scroll_showtime .row {
+  margin: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.scroll_showtime .row .card-img-left {
+  padding-bottom: 5px;
+}
+
+.scroll_showtime .row .card-body .d-flex .title {
+  min-width: 37px;
+}
+
+.showtime_place {
+  margin-top: 10px;
+}
+
+.showtime_place .line {
+  height: 20px;
+  width: 100%;
+  border-bottom: black 2px solid;
+}
+
+.showtime_place .place .place_name {
+  font-weight: bold;
+  padding: 15px 50px 0 0;
+}
+
+.showtime_place .place .time {
+  padding: 15px 20px 0 20px;
+}
+
+.price_description_sc {
+  background-color: black;
+}
+
+.price_description_sc .ticket_type {
+  margin-bottom: 20px;
 }
 
 .modal-dialog {
