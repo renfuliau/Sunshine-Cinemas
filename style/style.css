@@ -50,9 +50,9 @@ h2 {
   height: 100vh;
 }
 
-.banner_light {
-  top: 3%;
-  left: calc(50% - 94.5px);
+.light_video {
+  top: 15%;
+  left: calc(50% - 6.5%);
 }
 
 .news_sc {
