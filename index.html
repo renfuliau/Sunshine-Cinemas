@@ -754,9 +754,13 @@
         <!-- 電影時刻 -->
         <div class="show_time_sc" id="show_time_sc">
             <div class="container">
-                <div class="showtime_header d-flex">
-                    <h2 class="text-light" data-aos="zoom-in-down" data-aos-duration="1500">電影時刻</h2>
-                    <div class="dropdown">
+                <div class="showtime_header d-flex row">
+
+                    <h2 class="text-light" data-aos="zoom-in-down" data-aos-duration="1500">
+                        電影時刻
+                    </h2>
+
+                    <!-- <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             選擇日期
@@ -770,13 +774,1192 @@
                             <a class="dropdown-item" href="#">2020-01-04 (六)</a>
                             <a class="dropdown-item" href="#">2020-01-05 (日)</a>
                         </div>
-                    </div>
+                    </div> -->
+
+                    <select class="date_choose form-control col-6 col-md-2" name="" id="">
+                        <option class="choose_day_1" value="">2019-12-30 (一)</option>
+                        <option class="choose_day_2" value="">2019-12-31 (二)</option>
+                        <option class="choose_day_3" value="">2020-01-01 (三)</option>
+                        <option class="choose_day_4" value="">2020-01-02 (四)</option>
+                        <option class="choose_day_5" value="">2020-01-03 (五)</option>
+                        <option class="choose_day_6" value="">2020-01-04 (六)</option>
+                        <option class="choose_day_7" value="">2020-01-05 (日)</option>
+                    </select>
+
                 </div>
 
                 <div class="showtime_box" data-aos="flip-up" data-aos-duration="1500">
                     <div class="scroll_showtime" data-spy="scroll" data-target="#navbar-example3" data-offset="0">
 
-                        <div class="card row">
+                        <div class="showtime_day active day_1">
+                            <div class="card row">
+                                <img src="img/葉問4.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">葉問4</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">105分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">葉偉信</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">甄子丹、陳國坤、Scott Adkins、吳建豪</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">動作、劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="card row">
+                                <img src="img/星際大戰9.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">星際大戰9: <br> 天行者的崛起</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">142分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">J.J.亞伯拉罕</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">亞當崔佛, 黛西蕾德莉, 多姆納爾格里森, 凱莉羅素</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="card row">
+                                <img src="img/大說謊家.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">大說謊家</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">110分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">比爾坎登</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">海倫米蘭, 伊恩麥克連</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showtime_day day_2">
+                            <div class="card row">
+                                <img src="img/葉問4.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">葉問4</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">105分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">葉偉信</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">甄子丹、陳國坤、Scott Adkins、吳建豪</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">動作、劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="card row">
+                                <img src="img/星際大戰9.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">星際大戰9: <br> 天行者的崛起</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">142分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">J.J.亞伯拉罕</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">亞當崔佛, 黛西蕾德莉, 多姆納爾格里森, 凱莉羅素</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="card row">
+                                <img src="img/大說謊家.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">大說謊家</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">110分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">比爾坎登</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">海倫米蘭, 伊恩麥克連</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showtime_day day_3">
+                            <div class="card row">
+                                <img src="img/葉問4.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">葉問4</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">105分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">葉偉信</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">甄子丹、陳國坤、Scott Adkins、吳建豪</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">動作、劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="card row">
+                                <img src="img/星際大戰9.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">星際大戰9: <br> 天行者的崛起</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">142分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">J.J.亞伯拉罕</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">亞當崔佛, 黛西蕾德莉, 多姆納爾格里森, 凱莉羅素</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="card row">
+                                <img src="img/大說謊家.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">大說謊家</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">110分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">比爾坎登</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">海倫米蘭, 伊恩麥克連</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showtime_day day_4">
+                            <div class="card row">
+                                <img src="img/葉問4.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">葉問4</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">105分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">葉偉信</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">甄子丹、陳國坤、Scott Adkins、吳建豪</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">動作、劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="card row">
+                                <img src="img/星際大戰9.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">星際大戰9: <br> 天行者的崛起</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">142分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">J.J.亞伯拉罕</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">亞當崔佛, 黛西蕾德莉, 多姆納爾格里森, 凱莉羅素</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="card row">
+                                <img src="img/大說謊家.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">大說謊家</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">110分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">比爾坎登</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">海倫米蘭, 伊恩麥克連</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showtime_day day_5">
+                            <div class="card row">
+                                <img src="img/葉問4.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">葉問4</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">105分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">葉偉信</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">甄子丹、陳國坤、Scott Adkins、吳建豪</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">動作、劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="card row">
+                                <img src="img/星際大戰9.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">星際大戰9: <br> 天行者的崛起</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">142分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">J.J.亞伯拉罕</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">亞當崔佛, 黛西蕾德莉, 多姆納爾格里森, 凱莉羅素</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="card row">
+                                <img src="img/大說謊家.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">大說謊家</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">110分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">比爾坎登</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">海倫米蘭, 伊恩麥克連</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showtime_day day_6">
+                            <div class="card row">
+                                <img src="img/葉問4.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">葉問4</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">105分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">葉偉信</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">甄子丹、陳國坤、Scott Adkins、吳建豪</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">動作、劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="card row">
+                                <img src="img/星際大戰9.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">星際大戰9: <br> 天行者的崛起</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">142分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">J.J.亞伯拉罕</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">亞當崔佛, 黛西蕾德莉, 多姆納爾格里森, 凱莉羅素</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="card row">
+                                <img src="img/大說謊家.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">大說謊家</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">110分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">比爾坎登</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">海倫米蘭, 伊恩麥克連</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showtime_day day_7">
+                            <div class="card row">
+                                <img src="img/葉問4.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">葉問4</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">105分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">葉偉信</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">甄子丹、陳國坤、Scott Adkins、吳建豪</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">動作、劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="card row">
+                                <img src="img/星際大戰9.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">星際大戰9: <br> 天行者的崛起</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">142分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">J.J.亞伯拉罕</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">亞當崔佛, 黛西蕾德莉, 多姆納爾格里森, 凱莉羅素</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="card row">
+                                <img src="img/大說謊家.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
+                                <div class="card-body col-6 col-md-2 showtime_content">
+                                    <div class="class_title d-flex">
+                                        <img src="img/class6.gif" alt="">
+                                        <h5 class="card-title">大說謊家</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">片長:</div>
+                                        <div class="showtime_content">110分</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">導演:</div>
+                                        <div class="showtime_content">比爾坎登</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">演員:</div>
+                                        <div class="showtime_content">海倫米蘭, 伊恩麥克連</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="showtime_content title">類型:</div>
+                                        <div class="showtime_content">劇情</div>
+                                    </div>
+                                </div>
+                                <div class="showtime_place col-12 col-md-7">
+                                    <div class="place d-flex">
+                                        <div class="place_name">4樓A廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">6樓b廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="place d-flex">
+                                        <div class="place_name">星光廳</div>
+                                        <div class="time">10:20</div>
+                                        <div class="time">13:20</div>
+                                        <div class="time">16:20</div>
+                                        <div class="time">19:20</div>
+                                        <div class="time">22:20</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="card row">
                             <img src="img/葉問4.jpg" class="card-img-left col-5 col-md-2 mt-1" alt="...">
                             <div class="card-body col-6 col-md-2 showtime_content">
                                 <div class="class_title d-flex">
@@ -939,7 +2122,7 @@
                                 </div>
                                 <div class="line"></div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -1206,6 +2389,74 @@
             $(".mobile_button").toggleClass("button_active");
         });
     });
+
+    var dateChoose1 = $('.choose_day_1');
+    var dateChoose2 = $('.choose_day_2');
+    var dateChoose3 = $('.choose_day_3');
+    var dateChoose4 = $('.choose_day_4');
+    var dateChoose5 = $('.choose_day_5');
+    var dateChoose6 = $('.choose_day_6');
+    var dateChoose7 = $('.choose_day_7');
+
+    var showTime1 = $('.day_1');
+    var showTime2 = $('.day_2');
+    var showTime3 = $('.day_3');
+    var showTime4 = $('.day_4');
+    var showTime5 = $('.day_5');
+    var showTime6 = $('.day_6');
+    var showTime7 = $('.day_7');
+
+    dateChoose1.onclick = function(){
+        clear_active();
+
+        showTime1.addClass('active');
+    }
+
+    dateChoose2.onclick = function(){
+        clear_active();
+
+        showTime2.addClass('active');
+    }
+
+    dateChoose3.onclick = function(){
+        clear_active();
+
+        showTime3.addClass('active');
+    }
+
+    dateChoose4.onclick = function(){
+        clear_active();
+
+        showTime4.addClass('active');
+    }
+
+    dateChoose5.onclick = function(){
+        clear_active();
+
+        showTime5.addClass('active');
+    }
+
+    dateChoose6.onclick = function(){
+        clear_active();
+
+        showTime6.addClass('active');
+    }
+
+    dateChoose7.onclick = function(){
+        clear_active();
+
+        showTime7.addClass('active');
+    }
+
+    function clear_active() {
+        showTime1.removeClass('active');
+        showTime2.removeClass('active');
+        showTime3.removeClass('active');
+        showTime4.removeClass('active');
+        showTime5.removeClass('active');
+        showTime6.removeClass('active');
+        showTime7.removeClass('active');
+    }
 </script>
 
 

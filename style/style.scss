@@ -444,6 +444,22 @@ h2 {
     }
 }
 
+.date_choose {
+    margin: 70px 0 20px 50px;
+}
+
+.showtime_day {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.showtime_day.active {
+    opacity: 1;
+    pointer-events: all;
+    display: block;
+}
+
 .showtime_content {
     padding-top: 10px;
 
