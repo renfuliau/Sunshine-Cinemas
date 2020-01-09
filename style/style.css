@@ -13,17 +13,40 @@ h2 {
 }
 
 .logo {
-  font-size: 50px;
   opacity: 0.85;
 }
 
 .logo h1 {
-  line-height: 75px;
+  font-size: 50px;
   margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .logo h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 994px) {
+  .logo h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo h1 {
+    font-size: 28px;
+  }
 }
 
 .logo h1 a {
   text-decoration: none;
+}
+
+@media (max-width: 780px) {
+  .nav_links {
+    display: none;
+  }
 }
 
 .nav_links ul {
@@ -38,8 +61,85 @@ h2 {
   font-size: 18px;
 }
 
+@media (max-width: 1200px) {
+  .nav_links ul li {
+    padding: 0px 5px;
+  }
+}
+
+@media (max-width: 994px) {
+  .nav_links ul li {
+    font-size: 14px;
+  }
+}
+
 .nav_links ul li a {
   text-decoration: none;
+}
+
+.mobile_button {
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/menu.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 780px) {
+  .mobile_button {
+    display: block;
+  }
+}
+
+.mobile_menu {
+  position: fixed;
+  top: 48px;
+  left: 0px;
+  height: calc(100vh - 48px);
+  width: 100%;
+  background-color: black;
+  z-index: 10;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: all 300ms ease 300ms;
+  transition: all 300ms ease 300ms;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.menu_links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu_links li {
+  width: 100%;
+  font-size: 20px;
+  opacity: 1;
+  padding: 0px;
+  margin: 0px;
+  -webkit-transition: all 300ms ease 0ms;
+  transition: all 300ms ease 0ms;
+}
+
+.menu_links li a {
+  color: white;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  padding: 25px 30px;
 }
 
 .banner {
@@ -60,16 +160,23 @@ h2 {
   height: 270px;
   bottom: 3%;
   left: calc(50% - 270px);
-  background-color: rgba(255, 255, 255, 0.377);
+  background-color: rgba(0, 0, 0, 0.377);
+}
+
+@media (max-width: 550px) {
+  .news_sc {
+    width: 100%;
+    left: 0;
+  }
 }
 
 .news_sc h4 {
   left: calc(50% - 48px);
   color: white;
-  opacity: 0.8;
+  opacity: 0.6;
   padding-top: 15px;
   margin-bottom: 15px;
-  border-bottom: 5px solid #5e0b13;
+  border-bottom: 3px solid white;
 }
 
 .news_all {
@@ -88,7 +195,7 @@ h2 {
 .news_all ul li {
   padding-bottom: 8px;
   padding-top: 4px;
-  border-bottom: 3px solid #5e0b13;
+  border-bottom: 1px solid white;
 }
 
 .news_all ul li a {
@@ -102,12 +209,26 @@ h2 {
 .news_date {
   padding-right: 15px;
   font-size: 15px;
-  opacity: 0.85;
+  opacity: 0.7;
+}
+
+@media (max-width: 550px) {
+  .news_date {
+    font-size: 12px;
+    width: 120px;
+    padding-right: 8px;
+  }
 }
 
 .news_content {
   font-size: 15px;
   opacity: 0.7;
+}
+
+@media (max-width: 550px) {
+  .news_content {
+    font-size: 12px;
+  }
 }
 
 .now_on_sc {
@@ -151,6 +272,13 @@ h2 {
   display: block;
   line-height: 42px;
   margin: auto 3px;
+}
+
+@media (max-width: 768px) {
+  .now_on_sc .container .row .rank_list ul li h5 {
+    line-height: 32px;
+    font-size: 18px;
+  }
 }
 
 .now_on_sc .container .row .rank_list ul li .intro_btn {
@@ -276,13 +404,32 @@ h2 {
   border-bottom: black 2px solid;
 }
 
+@media (max-width: 768px) {
+  .showtime_place .line {
+    height: 5px;
+  }
+}
+
 .showtime_place .place .place_name {
+  width: 100px;
   font-weight: bold;
   padding: 15px 50px 0 0;
 }
 
+@media (max-width: 768px) {
+  .showtime_place .place .place_name {
+    padding: 5px 10px 0 0;
+  }
+}
+
 .showtime_place .place .time {
   padding: 15px 20px 0 20px;
+}
+
+@media (max-width: 768px) {
+  .showtime_place .place .time {
+    padding: 5px 10px 0 0;
+  }
 }
 
 .price_description_sc {
@@ -291,6 +438,12 @@ h2 {
 
 .price_description_sc .ticket_type {
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .price_description_sc .ticket_type .ticket {
+    padding: 10px 10px;
+  }
 }
 
 .modal-dialog {
