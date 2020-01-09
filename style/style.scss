@@ -371,6 +371,9 @@ h2 {
     width: 100%;
     height: 60vh;
     background-attachment: fixed;
+    @media (max-width: 768px) {
+        display: none
+    }
 }
 
 .parallax_bg2 {
@@ -381,6 +384,9 @@ h2 {
     width: 100%;
     height: 60vh;
     background-attachment: fixed;
+    @media (max-width: 768px) {
+        display: none
+    }
 }
 
 .parallax_mask {
@@ -388,6 +394,9 @@ h2 {
     width: 100%;
     height: 100%;
     opacity: 0.5;
+    @media (max-width: 768px) {
+        display: none
+    }
 }
 
 // 電影時刻
@@ -481,6 +490,11 @@ h2 {
             }
         }
     }
+}
+
+.about_us_sc {
+    background-color: black;
+
 }
 
 footer {

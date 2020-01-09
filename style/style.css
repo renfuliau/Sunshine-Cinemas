@@ -380,6 +380,12 @@ h2 {
   background-attachment: fixed;
 }
 
+@media (max-width: 768px) {
+  .parallax_bg1 {
+    display: none;
+  }
+}
+
 .parallax_bg2 {
   background-image: url("../img/星光廳.jpg");
   background-size: cover;
@@ -390,11 +396,23 @@ h2 {
   background-attachment: fixed;
 }
 
+@media (max-width: 768px) {
+  .parallax_bg2 {
+    display: none;
+  }
+}
+
 .parallax_mask {
   background-color: black;
   width: 100%;
   height: 100%;
   opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .parallax_mask {
+    display: none;
+  }
 }
 
 .show_time_sc {
@@ -492,6 +510,10 @@ h2 {
   .price_description_sc .ticket_type .ticket {
     padding: 10px 10px;
   }
+}
+
+.about_us_sc {
+  background-color: black;
 }
 
 footer .copyright {
