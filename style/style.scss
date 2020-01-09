@@ -483,6 +483,18 @@ h2 {
     }
 }
 
+footer {
+
+    .copyright {
+        background-color: darkslategray;
+        height: 50px;
+        p {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
 // Model CSS
 
 .modal-dialog {
