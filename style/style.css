@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'Noto Sans TC', sans-serif;
 }
@@ -295,9 +296,14 @@ h2 {
   margin: 1.75rem auto;
 }
 
+.now_on_sc .container .row .now_on_trailer {
+  height: 600px;
+}
+
 .coming_soon_sc {
   width: 100%;
   background-color: #0c0a0a;
+  padding-bottom: 100px;
 }
 
 .coming_soon_sc h2 {
@@ -364,8 +370,36 @@ h2 {
   width: 100%;
 }
 
+.parallax_bg1 {
+  background-image: url("../img/等候區1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+  background-attachment: fixed;
+}
+
+.parallax_bg2 {
+  background-image: url("../img/星光廳.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+  background-attachment: fixed;
+}
+
+.parallax_mask {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
 .show_time_sc {
   background-color: black;
+  padding-bottom: 100px;
 }
 
 .show_time_sc .dropdown {
@@ -396,6 +430,16 @@ h2 {
 
 .scroll_showtime .row .card-body .d-flex .title {
   min-width: 37px;
+}
+
+.showtime_content {
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .showtime_content {
+    padding-top: 2px;
+  }
 }
 
 .showtime_place {
