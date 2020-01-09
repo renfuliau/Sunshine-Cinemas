@@ -113,6 +113,10 @@ h2 {
   pointer-events: none;
 }
 
+.button_active {
+  background-image: url("../img/menu2.png");
+}
+
 .active {
   opacity: 1;
   pointer-events: all;
