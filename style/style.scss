@@ -6,6 +6,8 @@ h2 {
     padding: 70px 0 20px 0;
 }
 
+// Navbar// Navbar// Navbar// Navbar// Navbar// Navbar// Navbar// Navbar// Navbar// Navbar
+
 .nav_bar {
     height: 75px;
     width: 100%;
@@ -226,6 +228,10 @@ h2 {
     }
 }
 
+// 電影時刻// 電影時刻// 電影時刻// 電影時刻// 電影時刻// 電影時刻// 電影時刻// 電影時刻// 電影時刻// 電影時刻// 電影時刻
+
+// 現正熱映
+
 .now_on_sc {
     width: 100%;
     // height: 60vh;
@@ -294,6 +300,8 @@ h2 {
         }
     }
 }
+
+// 即將上映
 
 .coming_soon_sc {
     width: 100%;
@@ -399,7 +407,7 @@ h2 {
     }
 }
 
-// 電影時刻
+// 電影時刻// 電影時刻// 電影時刻// 電影時刻// 電影時刻// 電影時刻// 電影時刻// 電影時刻// 電影時刻// 電影時刻// 電影時刻// 電影時刻
 .show_time_sc {
     background-color: black;
     padding-bottom: 100px;
@@ -478,6 +486,8 @@ h2 {
     }
 }
 
+// 票價說明// 票價說明// 票價說明// 票價說明// 票價說明// 票價說明// 票價說明// 票價說明// 票價說明// 票價說明
+
 .price_description_sc {
     background-color: black;
     padding-bottom: 80px;
@@ -493,12 +503,46 @@ h2 {
     }
 }
 
-.about_us_sc {
-    
+// 關於我們// 關於我們// 關於我們// 關於我們// 關於我們// 關於我們// 關於我們// 關於我們// 關於我們// 關於我們// 關於我們
+
+.about_us_right {
+    flex-direction: column;
+}
+
+.google_map {
+    width: 100%;
+    height: 50%;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.google_map_mobile {
+    width: 100%;
+    height: 100vw;
+    display: none;
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
+.about_border {
+    border-top: 2px darkslategray solid;
+    border-bottom: 2px darkslategray solid;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.form_title {
+    padding: 20px 60px 0 0;
+}
+
+.form_content {
+    padding: 20px 0 0 0;
 }
 
 footer {
-
+    margin-top: 80px;
     .copyright {
         background-color: darkslategray;
         height: 50px;
