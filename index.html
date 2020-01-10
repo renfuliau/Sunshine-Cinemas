@@ -21,7 +21,8 @@
     <header>
         <!-- NAVIGATION -->
         <nav class="nav_bar fixed-top">
-            <div class="container d-flex justify-content-between position-relative">
+
+            <div class="container d-flex justify-content-between">
 
                 <div class="logo text-light">
                     <h1><a href="#news" class="text-white">日日新影城</a></h1>
@@ -37,20 +38,20 @@
                     </ul>
                 </div>
 
-                <div class="mobile_button"></div>
-
-                <div class="mobile_menu">
-                    <ul class="menu_links">
-                        <li><a href="#news" class="text-white">最新消息</a></li>
-                        <li><a href="#now_on" class="text-white">現正熱映</a></li>
-                        <li><a href="#coming_soon" class="text-white">即將上映</a></li>
-                        <li><a href="#show_time_sc" class="text-white">電影時刻</a></li>
-                        <li><a href="#price_description_sc" class="text-white">票價說明</a></li>
-                    </ul>
-                </div>
-
             </div>
         </nav>
+
+        <div class="mobile_button"></div>
+        
+        <div class="mobile_menu">
+            <ul class="menu_links">
+                <li><a href="#news" class="text-white">最新消息</a></li>
+                <li><a href="#now_on" class="text-white">現正熱映</a></li>
+                <li><a href="#coming_soon" class="text-white">即將上映</a></li>
+                <li><a href="#show_time_sc" class="text-white">電影時刻</a></li>
+                <li><a href="#price_description_sc" class="text-white">票價說明</a></li>
+            </ul>
+        </div>
 
         <!-- BANNER -->
         <div class="banner position-relative" id="news">
@@ -776,7 +777,7 @@
                         </div>
                     </div> -->
 
-                    <select class="date_choose form-control col-6 col-md-2" name="" id="">
+                    <!-- <select class="date_choose form-control col-6 col-md-2" name="" id="">
                         <option class="choose_day_1" value="">2019-12-30 (一)</option>
                         <option class="choose_day_2" value="">2019-12-31 (二)</option>
                         <option class="choose_day_3" value="">2020-01-01 (三)</option>
@@ -784,7 +785,7 @@
                         <option class="choose_day_5" value="">2020-01-03 (五)</option>
                         <option class="choose_day_6" value="">2020-01-04 (六)</option>
                         <option class="choose_day_7" value="">2020-01-05 (日)</option>
-                    </select>
+                    </select> -->
 
                 </div>
 
@@ -2390,73 +2391,73 @@
         });
     });
 
-    var dateChoose1 = $('.choose_day_1');
-    var dateChoose2 = $('.choose_day_2');
-    var dateChoose3 = $('.choose_day_3');
-    var dateChoose4 = $('.choose_day_4');
-    var dateChoose5 = $('.choose_day_5');
-    var dateChoose6 = $('.choose_day_6');
-    var dateChoose7 = $('.choose_day_7');
+    // var dateChoose1 = $('.choose_day_1');
+    // var dateChoose2 = $('.choose_day_2');
+    // var dateChoose3 = $('.choose_day_3');
+    // var dateChoose4 = $('.choose_day_4');
+    // var dateChoose5 = $('.choose_day_5');
+    // var dateChoose6 = $('.choose_day_6');
+    // var dateChoose7 = $('.choose_day_7');
 
-    var showTime1 = $('.day_1');
-    var showTime2 = $('.day_2');
-    var showTime3 = $('.day_3');
-    var showTime4 = $('.day_4');
-    var showTime5 = $('.day_5');
-    var showTime6 = $('.day_6');
-    var showTime7 = $('.day_7');
+    // var showTime1 = $('.day_1');
+    // var showTime2 = $('.day_2');
+    // var showTime3 = $('.day_3');
+    // var showTime4 = $('.day_4');
+    // var showTime5 = $('.day_5');
+    // var showTime6 = $('.day_6');
+    // var showTime7 = $('.day_7');
 
-    dateChoose1.onclick = function(){
-        clear_active();
+    // dateChoose1.onclick = function(){
+    //     clear_active();
 
-        showTime1.addClass('active');
-    }
+    //     showTime1.addClass('active');
+    // }
 
-    dateChoose2.onclick = function(){
-        clear_active();
+    // dateChoose2.onclick = function(){
+    //     clear_active();
 
-        showTime2.addClass('active');
-    }
+    //     showTime2.addClass('active');
+    // }
 
-    dateChoose3.onclick = function(){
-        clear_active();
+    // dateChoose3.onclick = function(){
+    //     clear_active();
 
-        showTime3.addClass('active');
-    }
+    //     showTime3.addClass('active');
+    // }
 
-    dateChoose4.onclick = function(){
-        clear_active();
+    // dateChoose4.onclick = function(){
+    //     clear_active();
 
-        showTime4.addClass('active');
-    }
+    //     showTime4.addClass('active');
+    // }
 
-    dateChoose5.onclick = function(){
-        clear_active();
+    // dateChoose5.onclick = function(){
+    //     clear_active();
 
-        showTime5.addClass('active');
-    }
+    //     showTime5.addClass('active');
+    // }
 
-    dateChoose6.onclick = function(){
-        clear_active();
+    // dateChoose6.onclick = function(){
+    //     clear_active();
 
-        showTime6.addClass('active');
-    }
+    //     showTime6.addClass('active');
+    // }
 
-    dateChoose7.onclick = function(){
-        clear_active();
+    // dateChoose7.onclick = function(){
+    //     clear_active();
 
-        showTime7.addClass('active');
-    }
+    //     showTime7.addClass('active');
+    // }
 
-    function clear_active() {
-        showTime1.removeClass('active');
-        showTime2.removeClass('active');
-        showTime3.removeClass('active');
-        showTime4.removeClass('active');
-        showTime5.removeClass('active');
-        showTime6.removeClass('active');
-        showTime7.removeClass('active');
-    }
+    // function clear_active() {
+    //     showTime1.removeClass('active');
+    //     showTime2.removeClass('active');
+    //     showTime3.removeClass('active');
+    //     showTime4.removeClass('active');
+    //     showTime5.removeClass('active');
+    //     showTime6.removeClass('active');
+    //     showTime7.removeClass('active');
+    // }
 </script>
 
 

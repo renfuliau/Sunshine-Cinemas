@@ -1,3 +1,12 @@
+// html,body
+// {
+//     width: 100%;
+//     height: 100%;
+//     margin: 0px;
+//     padding: 0px;
+//     overflow-x: hidden; 
+// }
+
 body {
     font-family: 'Noto Sans TC', sans-serif;
 }
@@ -12,7 +21,12 @@ h2 {
     height: 75px;
     width: 100%;
     background-color: black;
+
+    @media (max-width: 576px) {
+        font-size: 48px;
+    }
 }
+
 
 .logo {
     // font-size: 50px;
@@ -65,9 +79,6 @@ h2 {
             @media (max-width: 994px) {
                 font-size: 14px;
             }
-
-
-
             a {
                 text-decoration: none;
 
@@ -88,6 +99,7 @@ h2 {
     right: 10px;
     display: none;
     cursor: pointer;
+    z-index: 1000000;
 
     @media (max-width: 780px) {
         display: block;
@@ -95,7 +107,7 @@ h2 {
 }
 
 .mobile_menu {
-    position: fixed;
+    position: absolute;
     top: 48px;
     left: 0px;
     height: calc(100vh - 48px);
@@ -106,8 +118,13 @@ h2 {
     transition: all 300ms ease 300ms;
     opacity: 0;
     pointer-events: none;
+    ul {
+        width: 100%;
 
-
+        li {
+            width: 100%;
+        }
+    }
 }
 
 .button_active {
@@ -160,7 +177,7 @@ h2 {
 }
 
 .news_sc {
-    width: 540px;
+    max-width: 540px;
     height: 270px;
     bottom: 3%;
     left: calc(50% - 270px);
@@ -294,6 +311,7 @@ h2 {
                     }
                 }
             }
+
             .now_on_trailer {
                 height: 600px;
             }
@@ -379,6 +397,7 @@ h2 {
     width: 100%;
     height: 60vh;
     background-attachment: fixed;
+
     @media (max-width: 768px) {
         display: none
     }
@@ -392,6 +411,7 @@ h2 {
     width: 100%;
     height: 60vh;
     background-attachment: fixed;
+
     @media (max-width: 768px) {
         display: none
     }
@@ -402,6 +422,7 @@ h2 {
     width: 100%;
     height: 100%;
     opacity: 0.5;
+
     @media (max-width: 768px) {
         display: none
     }
@@ -528,6 +549,7 @@ h2 {
 .google_map {
     width: 100%;
     height: 50%;
+
     @media (max-width: 768px) {
         display: none;
     }
@@ -537,6 +559,7 @@ h2 {
     width: 100%;
     height: 100vw;
     display: none;
+
     @media (max-width: 768px) {
         display: block;
     }
@@ -559,9 +582,11 @@ h2 {
 
 footer {
     margin-top: 80px;
+
     .copyright {
         background-color: darkslategray;
         height: 50px;
+
         p {
             padding: 0;
             margin: 0;
