@@ -464,6 +464,7 @@ h2 {
 
 .scroll_showtime .row .card-img-left {
   padding-bottom: 5px;
+  max-height: 250px;
 }
 
 .scroll_showtime .row .card-body .d-flex .title {
