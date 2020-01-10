@@ -330,6 +330,10 @@ h2 {
   padding: 70px 0 20px 0;
 }
 
+.time_line {
+  padding: 10px;
+}
+
 .card {
   border-radius: 0px;
   border: none;
@@ -548,6 +552,11 @@ h2 {
   .price_description_sc .ticket_type .ticket {
     padding: 10px 10px;
   }
+}
+
+.content {
+  padding: 8px;
+  margin-bottom: 20px;
 }
 
 .about_us_right {
