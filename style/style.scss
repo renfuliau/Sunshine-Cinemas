@@ -565,7 +565,12 @@ h2 {
 // 關於我們// 關於我們// 關於我們// 關於我們// 關於我們// 關於我們// 關於我們// 關於我們// 關於我們// 關於我們// 關於我們
 
 .about_us_right {
+    display: flex;
+    justify-content: end;
     flex-direction: column;
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
 }
 
 .google_map {
@@ -592,23 +597,29 @@ h2 {
     border-bottom: 2px darkslategray solid;
     margin-top: 50px;
     margin-bottom: 50px;
+    flex-direction: column;
 }
 
 .form_title {
     padding: 20px 60px 0 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
+        padding: 20px 30px 0 0;
+    }
+
+    @media (max-width: 992px) {
         padding: 20px 20px 0 0;
-        font-size: 1rem;
+        font-size: 15px;
     }
 }
 
 .form_content {
     padding: 20px 0 0 0;
+    
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
 
-        font-size: 1rem;
+        font-size: 15px;
     }
 }
 
