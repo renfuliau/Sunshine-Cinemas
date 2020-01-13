@@ -1,5 +1,6 @@
 @charset "UTF-8";
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -228,6 +229,13 @@ h2 {
 
 .news_title {
   margin: 0 auto;
+}
+
+.news_btn {
+  border: 0px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .news_date {
