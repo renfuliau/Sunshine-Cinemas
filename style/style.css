@@ -517,9 +517,15 @@ h2 {
 }
 
 .showtime_place .place .place_name {
-  width: 100px;
+  width: 120px;
   font-weight: bold;
   padding: 15px 50px 0 0;
+}
+
+@media (max-width: 992px) {
+  .showtime_place .place .place_name {
+    padding: 5px 10px 0 0;
+  }
 }
 
 @media (max-width: 768px) {
