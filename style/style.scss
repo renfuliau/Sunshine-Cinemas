@@ -633,7 +633,8 @@ footer {
 
     .copyright {
         background-color: darkslategray;
-        height: 50px;
+        height: 30px;
+        flex-direction: column;
 
         p {
             padding: 0;
